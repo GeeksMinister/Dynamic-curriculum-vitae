@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Regular.ttf");
+}
+
+body{
+    border: 2.5px solid hsl(213, 62%, 23%);
+    font-family: sans-serif, 'Times New Roman', Times, serif, Arial;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-size: clamp(1rem, 0.2rem + 1vw, 1.3rem);
+  }
+
+  p{
+    font-family: "Roboto", sans-serif, 'Times New Roman', Times, serif, Arial;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
+  h1{
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 2px rgb(194, 182, 182);
+    font-weight: 900;
+  }
+
+  h2 {
+    color: hsl(200, 84%, 45%);
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  header {
+    color: rgb(13,64,146);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;  
+    font-size: 2.1vh;
+    font-size: clamp(0.3rem, 1rem + 1.5vw, 2rem);
+    text-shadow: 0px 1px 1px rgb(0, 0, 0);
+  }
+  
+  nav {
+    background-color: hsl(0, 0%, 90%);
+    border: solid rgb(13,64,146);
+    display: inline-block;
+    width: 65%;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2.4vh;
+    font-size: clamp(0.5rem, 1rem + 1.2vw, 1.6rem);
+  }
+  
+  nav ul li {
+    cursor:pointer;
+    padding: 3vh;
+    padding: clamp(1.4vh, 0.7rem,  3vh);
+    margin: 0 auto;
+  }
+  
+  a {
+    color:hsl(222, 83%, 43%);
+    text-decoration: none;
+  }
+  
+  nav .current {
+    border-bottom: solid rgb(13,64,146);
+  }
+  
+  nav a:hover{
+    background-color: rgb(118, 191, 201);
+    color:rgb(58, 36, 36);
+    border-radius: 8px;
+}
+
+  article {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    position: relative;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .social-icons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  
+  .social-icons a:hover {
+    background-color: rgb(168, 196, 200);
+    border-radius: 10px;
+    color:rgb(45, 21, 87);
+    font-size: 3rem;
+    transition:all 0.3s ease-in ;
+}
+
+  footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 90%);
+    width: 100%;
+    height: 10%;
+    max-height: 85px;
+  }
+
+  @media screen and (max-width: 635px ) {
+    nav {
+      width: 100%;
+    }
+    nav ul li {
+      cursor:pointer;
+      padding: 8px;
+      margin: 0 auto;
+    }
+  }
+

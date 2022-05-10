@@ -1,0 +1,65 @@
+{
+  "workExperiance":[
+    {
+      "title" : "Maskinoperatör på Swt Paper AB",
+      "year": "2013-2014"
+    },
+    {
+      "title" : "Säljare i butik för turister i Istanbul – Turkiet",
+      "year": "2016-2021"
+    }
+  ],
+  "education": [
+    {
+      "title" : "Systemutvecklare .NET",
+      "year": "2021-2023"
+    },
+    {
+      "title" : "Utveckling med C#",
+      "year": "2020-2021"
+    },
+    {
+      "title" : "Vuxenutbildning",
+      "year": "2014–2016"
+    },
+    {
+      "title" : "Teknisk högskola – Dator och nätverkstekniker",
+      "year": "2010–2013"
+    },
+    {
+      "title" : "Gymnasieutbildning – Naturvetenskap",
+      "year": "2008–2010"
+    }
+  ],
+  "portfolio":[
+    {
+      "title": "Minimal-API - ASP.NET med Dapper",
+      "description" : "Projektet består av en SQL-databas med konfigurerad Dapper för en enkel dataåtkomst. Projektet innehåller en enda klass för en helt fungerande API"
+    },
+    {
+      "title": "Restful-API för ett företag - ASP.NET Web-API med Class Library",
+      "description" : "Ett tids rapporteringssystem som samlar data om anställda och deras tider som dem jobbat. Projektet resulterar i ett REST-API."
+    },
+    {
+      "title":"Car Racing Simulator - Console Application",
+      "description" : "Ett program som simulerar en biltävling där två (eller fler) bilar kör ett lopp mot varandra. Det är ingen grafik utan enbart i konsolen men bilarna kommer köra i olika trådar och verkligen på riktigt tävla mot varandra."
+    },
+    {
+      "title": "Databas för en skola - Console Application med Entity Framework",
+      "description" : "En Console-applikation som en skola kan använda och som har många olika funktionalitet."
+    },
+    {
+      "title": "Number Guessing Game - Console Application",
+      "description" : "Ett rätt enkelt spel där användaren får gissa ett nummer. Användaren kommer få lite ledtrådar och har ett begränsat antal försök på sig att gissa."
+    },
+    {
+      "title": "Avdelningsrapport för ett bibliotek - Windows Forms",
+      "description" : "En windows-forms-app som skickar in listor med böcker till en central dator som kör annan desktop-app Den desktop-appen tar emot data, lägger text i en lista och kan exportera listan som en textfil. Både Programm kan exportera och importera text från en fil och konvertera det till ett bokobjekt, och använder lokala IP-adress (127.0.0.1) och porten 12345."
+    },
+    {
+      "title": "Lagerdatabas - Windows Forms",
+      "description" : "Det här programmet läser in en databas med en tabell kallas 'Vitvaror'. Bland vitvarorna finns det olika inlägg med ett Id, Namn, Lagerstatus och Pris. I grundversionen av programmet finns det olika metoder och funktioner."
+    }
+  ]
+}
+
