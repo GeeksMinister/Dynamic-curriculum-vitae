@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+## Easter eggs
+Click on the profile photo to change the background image. Click on the heading ‘Curriculum vitae’ to change back the background. <br />
+Type the combination ‘1337’ to trigger the popup modal. You can press ‘ESC’ , ‘Space’ or ‘Enter’ to reset the input and type in the correct combination. The modal disappears if the html body gets clicked on anywhere after it was shown. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Web accessibility guidelines  
+I have carefully followed WCAG (Web Content Accessibility Guidelines) to make the website fully accessible and to deliver its content without any trouble. Here are some of the steps that i did <br />
+I specified the language in the html tag (lang = "sv") so that browsers should know which language is used in my pages and possibly ask the user if he wants to translate to another language. <br />
+The fonts I used were the clearest I could find. I also tested color contrasts between the color of the text and the background on https://webaim.org/ and it was approved according to WCAG. <br />
+I placed the headings in a clear and correct place and made sure that they have a simple description to prevent visitors from feeling lost or confused. <br />
+I went through the relevant guidelines to my page and double-checked if there is anything that needs to be fixed, and then used the online test tool for accessibility on
+https://webbriktlinjer.se/testa-din-webbplats.  ![image](https://user-images.githubusercontent.com/98697297/167631097-4f63e283-0c38-41d5-bcb0-42b69f55ec7a.png)
 
-## Available Scripts
+## Responsivity in different devices / screens
+The first thing I did to make sure that the web page will look good on different screens, was to use 'viewport' in the meta tag so that the pages will always have the same width as the user's screen. (viewport "content =" width = device-width, initial-scale = 1.0). <br />
+Thanks to the feedback I got on the previous website, I realized that the website wasn’t 100% responsive, so I had to revise some of the CSS-code to improve the headings, tables, and the layout for the contact form in “Kontakta mig” <br />
+To make the elements adjust themselves automatically and nicely in different screen sizes, I’ve mainly used the brilliant size units: “ vh, wh, %, max-width/height “ and a bit of media queries. <br />
+I also had to use Chrome Devtools 'device mode' all the time during development to test and check what the website looks like on tablets, mobiles, and other screens .
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Compatibility 
+I have tested how the pages appear on the following browsers: <br /> Chrome, Microsoft Edge, Addblocker, Opera, Safari, Firefox. Everything seemed to work as it should. <br />
+To make sure that browsers will correctly render the content from the code, I also validated my HTML & CSS files on validator.w3.org, and there were no errors nor warnings were shown regarding any part in the code files. <br />
+For the backup font-family I used ‘Times New Roman’ and Arial since they are widely supported in any browser. <br />
+I did check every property and function I have in my JavaScript or CSS files on “caniuse.com” and everything came out with a pretty heigh global implementation rate, like 97% and above. <br /> 
+However, the lowest rate was for the CSS function clamp(), which was 91%, so I had to add a backup property to support the outdated browsers for more than two-years.
