@@ -1,0 +1,22 @@
+@media print{
+    h1{
+        color: rgb(13,64,146);
+    }
+    h2, h3, p , img{
+      margin: 5px;
+      padding: 5px;
+    }
+    img {
+      margin: 0 auto;
+    }
+    p , table, li, .portfolio table {
+      text-shadow: none;
+      color: black;
+    }
+    footer, video, label {
+      display: none;
+    }
+    .portfolio table td {
+      display: block;
+    }
+  }

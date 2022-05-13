@@ -1,43 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords" content="photography, gaming, resume, cv" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cv-style.css" />
+    <link rel="stylesheet" href="css/print.css" />
+    <title>Nael Sharabi - CV</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body id="cv_body" class="cv-body">
+    <div id="modal_container" class="modal-container">
+      <div class="modal">
+        <h2>Woo Hoo! Du har hittat mig 🐣</h2>
+        <p>Var så god, här får du tre kakor 🍪🍪🍪</p>
+      </div>
+    </div>
+    <header>
+      <h1>Nael Sharabi</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="current">&nbsp;&nbsp;CV&nbsp;&nbsp;</a>
+          </li>
+          <li><a href="gaming.html">&nbsp;&nbsp;Gaming&nbsp;&nbsp;</a></li>
+          <li>
+            <a href="photography.html">&nbsp;&nbsp;Fotografering&nbsp;&nbsp;</a>
+          </li>
+          <li><a href="dotnet.html">&nbsp;&nbsp;.NET&nbsp;&nbsp;</a></li>
+          <li>
+            <a href="contact_me.html">&nbsp;&nbsp;Kontakta mig&nbsp;&nbsp;</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article class="cv">
+      <h2 class="cv-heading" onclick="changeBackBackground()">
+        Curriculum vitae
+      </h2>
+      <img
+        class="profile-photo"
+        src="images/photo.bmp"
+        alt="Bild Saknas"
+        onclick="changeBackground()"
+      />
+      <section class="presentation">
+        <h2>Kort Om Mig</h2>
+        <p>
+          En riktig IT-kille som läste datorvätverk i gymnasiet och i ett
+          institut för två år. <br />
+          Har jobbat i mer än fem år i industribranschen som maskinoperatör, och
+          nu pluggar jag till systemutvecklare i yrkeshögskolan i Varberg.
+          <br />
+          Av tidigare arbetskamrater har jag fått höra att jag motiverar och
+          entusiasmerar mina kollegor, är också trevlig och ställer upp för dem
+          när de behöver hjälp. <br />
+          Jag gillar utveckling och att lära nytt. Jag arbetar jättebra i ett
+          team och även i stressiga situationer.
+        </p>
+        <script src="javascript.js"></script>
+      </section>
+      <hr />
+      <br />
+      <section class="portfolio">
+        <h2>PROJEKT PORTFÖLJEN</h2>
+        <table id="github-repos"></table>
+      </section>
+      <section>
+        <h2>ARBETSLIVSERFARENHET</h2>
+        <table>
+          <tbody id="experiance"></tbody>
+        </table>
+      </section>
+      <section class="education">
+        <h2>UTBILDNING</h2>
+        <table>
+          <tbody id="education-table"></tbody>
+        </table>
+      </section>
+      <section class="qualities">
+        <h2>FEM ORD SOM BESKRIVER NAEL</h2>
+        <div class="qualities-list">
+          <ul>
+            <li>Uppriktig</li>
+            <li>Utåtriktad</li>
+            <li>Innovative</li>
+            <li>Självgående</li>
+            <li>Kvalitetsmedveten</li>
+          </ul>
+        </div>
+        <img src="images/image.jpg" alt="bild saknas" class="image" />
+      </section>
+    </article>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <footer>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/nael.sharapi/"
+          class="fab fa-facebook"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.instagram.com/naelsharapi/"
+          class="fab fa-instagram"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/NAYEL4SLR"
+          class="fab fa-github"
+          target="_blank"
+        ></a>
+        <a
+          href="https://discord.com/invite/testing_labb1"
+          class="fab fa-discord"
+          target="_blank"
+        ></a>
+        <a
+          href="mailto:nael4slr@gmail.com"
+          class="fa fa-envelope"
+          target="_blank"
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
